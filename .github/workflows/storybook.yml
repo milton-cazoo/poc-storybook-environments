@@ -2,7 +2,7 @@ name: Build and Deploy
 
 on:
   pull_request:
-    types: [opened, synchronize, closed]
+    types: [opened, synchronize]
   push:
     branches:
       - main
@@ -34,3 +34,8 @@ jobs:
           FOLDER: docs-build
           CLEAN: true
           TARGET_FOLDER: ${{ github.head_ref || 'main' }}
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        uses: thollander/actions-comment-pull-request@v1
+        with:
+          message: 'Preview available at https://milton-cazoo.github.io/poc-storybook-environments/${{ github.head_ref }}'
