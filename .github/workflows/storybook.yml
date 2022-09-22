@@ -24,6 +24,8 @@ jobs:
         run: |
           npm ci
           npm run build-storybook
+      - name: Branch name
+        run: echo ${{ github.head_ref }}
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
