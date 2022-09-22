@@ -9,7 +9,7 @@
 }
 .storybook-button--primary {
   color: white;
-  background-color: #1ea7fd;
+  background-color: red;
 }
 .storybook-button--secondary {
   color: #333;
@@ -133,4 +133,4 @@ section .tip-wrapper svg path {
 }
 
 
-/*# sourceMappingURL=main.f670686b.css.map*/
+/*# sourceMappingURL=main.9a9a0c9d.css.map*/
