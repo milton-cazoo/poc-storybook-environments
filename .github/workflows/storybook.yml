@@ -31,4 +31,4 @@ jobs:
           BRANCH: gh-pages
           FOLDER: docs-build
           CLEAN: true
-          TARGET_FOLDER: ${GITHUB_REF_NAME}
+          TARGET_FOLDER: ${{ github.head_ref }}
