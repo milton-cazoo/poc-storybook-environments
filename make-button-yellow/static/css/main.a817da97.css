@@ -1,5 +1,5 @@
 .storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
   border-radius: 3em;
@@ -8,7 +8,7 @@
   line-height: 1;
 }
 .storybook-button--primary {
-  color: white;
+  color: black;
   background-color: yellow;
 }
 .storybook-button--secondary {
@@ -133,4 +133,4 @@ section .tip-wrapper svg path {
 }
 
 
-/*# sourceMappingURL=main.3f15eadf.css.map*/
+/*# sourceMappingURL=main.a817da97.css.map*/
