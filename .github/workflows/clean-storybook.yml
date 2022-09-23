@@ -18,8 +18,8 @@ jobs:
       - name: Remove ${{ github.head_ref }} folder
         run: rm -rf ${{ github.head_ref }}
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          branch: gh-pages
-          commit_message: Remove ${{ github.head_ref }}
-          commit_options: '--no-verify'
+        run: |
+          # Commit updated packages
+          git add .
+          git commit -m "Remove ${{ github.head_ref }}" --no-verify
+          git push
